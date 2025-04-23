@@ -1,26 +1,36 @@
----
 name: Task Template
 about: Default task template
 title: "タスク名"
-labels: ''
-assignees: ''
+labels:
+  - task
+assignees:
+  - your-github-username
+
 body:
   - type: markdown
     attributes:
-      label: 説明
+      value: |
+        ## 説明  
+        ここにタスクの概要を記入してください。
+
   - type: dropdown
-    id: labels
+    id: task_label
     attributes:
       label: ラベル
+      description: ラベルを選んでください
       options:
         - bug
         - enhancement
         - documentation
+
   - type: input
-    id: assignees
+    id: task_assignee
     attributes:
-      label: Assignees
+      label: 担当者
+      description: GitHub のユーザー名を入力してください
+
   - type: textarea
     id: current_status
     attributes:
       label: 現在の状況
+      description: 現在の進捗状況を記入してください
