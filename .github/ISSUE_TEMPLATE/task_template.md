@@ -9,8 +9,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### このテンプレートはタスク管理用です
-        必要な項目を埋めてください。
+        ## 説明
+        このタスクが何を目的としているか記入してください。
 
   - type: dropdown
     id: labels
@@ -25,10 +25,10 @@ body:
     id: assignees
     attributes:
       label: Assignees
-      description: GitHubユーザー名をカンマ区切りで入力してください
+      description: GitHubユーザー名をカンマ区切りで記入してください
 
   - type: textarea
     id: current_status
     attributes:
       label: 現在の状況
-      description: 現在の進捗状況などを記載してください
+      description: 現在の進捗状況を簡単に記入してください
