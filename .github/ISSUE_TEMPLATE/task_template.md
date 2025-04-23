@@ -17,13 +17,9 @@ body:
         - enhancement
         - documentation
   - type: input
-    id: assigner
+    id: assignees
     attributes:
-      label: Assigner
-  - type: input
-    id: assignee
-    attributes:
-      label: Assignee
+      label: Assignees
   - type: textarea
     id: current_status
     attributes:
